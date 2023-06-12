@@ -1,0 +1,19 @@
+using System;
+using System.Collections.Generic;
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {   
+        int[] arr = {1,2,3,4,5};
+        int i = 1 ;
+        foreach(int n in arr) {
+            try{
+            Console.WriteLine(arr[i++]);
+            }
+            catch(IndexOutOfRangeException e) {
+                Console.WriteLine(e);
+            }
+        }
+    }
+}
