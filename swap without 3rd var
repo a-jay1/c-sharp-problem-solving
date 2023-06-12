@@ -1,0 +1,13 @@
+using System;
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {   int a = 10 ;
+        int b = 15 ;
+        a += b;
+        b = a-b;
+        a = a-b;
+        Console.WriteLine(a+"   "+b);
+    }
+}
