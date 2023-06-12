@@ -1,0 +1,23 @@
+using System;
+using System.Collections.Generic;
+
+public class Hashing {
+    public void method(string[] arr)
+    {   int lengthOfArr = arr.Length;
+        HashSet<string> set = new HashSet<string>();
+        foreach(String i in arr) {
+            set.Add(i);
+        }
+        if(set.Count == lengthOfArr) Console.WriteLine("noDuplicate");
+        else Console.WriteLine("ContainDuplicate");
+    }
+}
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {   
+        Hashing obj1 = new Hashing();
+        string[] arr = {"abc","dfg","abc"};
+        obj1.method(arr);
+    }
+}
