@@ -1,0 +1,22 @@
+using System;
+using System.Collections.Generic;
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {   
+        HashSet<string> set = new HashSet<string>();
+        string[] arr = {"abc","dfg","abc","efd","sdf","sdf"};
+        for(int i = 0 ; i < arr.Length ; i++) {
+            if(!set.Contains(arr[i])) {
+                set.Add(arr[i]);
+                int count = 0 ;
+                foreach(String str in arr) {
+                    if(arr[i] == str) count++;
+                }
+                if(count == 1) Console.WriteLine($"{arr[i]} has no Duplicate");
+                else Console.WriteLine($"{arr[i]} has Duplicate elements of {count}");
+            }
+        }
+    }
+}
