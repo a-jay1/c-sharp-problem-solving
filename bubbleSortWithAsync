@@ -1,0 +1,27 @@
+using System;
+using System.Threading.Tasks;
+
+public class HelloWorld
+{   
+    static async Task Method() {
+        Console.WriteLine("waiting");
+        await Task.Delay(2000);
+    }
+    static async Task Main(string[] args)
+    {   
+        //HelloWorld obj = new HelloWorld();
+        await Method();
+        int[] arr = {3,2,1,4,5};
+        for(int i = 0 ; i < arr.Length ; i++) {
+            for(int j = 0 ; j < arr.Length -1 -i ; j++) {
+                
+                if(arr[j] > arr[j+1]) {
+                    int temp = arr[j];
+                    arr[j] = arr[j+1];
+                    arr[j+1] = temp ;
+                }
+            }
+        }
+        foreach(int i in arr) Console.WriteLine(i);
+    }
+}
