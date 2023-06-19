@@ -1,0 +1,154 @@
+using System;
+
+
+public class HelloWorld
+{   
+    public static int rec(int n) {
+        if(n <= 1) return n;
+        return rec(n-1)+rec(n-2);
+    }
+    public static void Main(string[] args)
+    {
+        
+            // prime or not
+    /*
+            int a = int.Parse(Console.ReadLine());
+            int prime = 1;
+            for (int i = 2; i <= (int)Math.Sqrt(a); i++)
+            {
+                if (a % i == 0)
+                {
+                    prime = 0;
+                    break;
+                }
+            }
+            if (prime == 1) Console.WriteLine("prime");
+            else Console.WriteLine("not prime");
+            */
+            
+            // duplicates
+            
+    /*
+            HashSet<string> set = new HashSet<string>();
+            string[] arr = { "abc", "dfg", "abc", "efd", "sdf", "sdf" };
+            for (int i = 0; i < arr.Length; i++)
+            {
+                if (!set.Contains(arr[i]))
+                {
+                    set.Add(arr[i]);
+                    int count = 0;
+                    foreach (String str in arr)
+                    {
+                        if (arr[i] == str) count++;
+                    }
+                    if (count == 1) Console.WriteLine($"{arr[i]} has no Duplicate");
+
+                    else Console.WriteLine($"{arr[i]} has Duplicate elements of {count}");
+                }
+            }
+            */
+                
+            // even total
+            /*
+            int tot = 0 ;
+            for(int i = 1 ; i < 101 ; i++) if(i%2==0) tot+=100;
+            Console.WriteLine(tot);
+            */
+            
+            // char frequency count    
+            /*
+            int[] arr = new int[26] ;
+            string str = "aaaabbbbcccc";
+            
+            foreach (char i in str) {
+                arr[(int)i - (int)'a']++;
+            }
+            for(char i = 'a' ; i <= 'z' ; i++) {
+                if(arr[(int)i - (int)'a']>0)
+                Console.WriteLine(i+"   "+arr[(int)i - (int)'a']);
+            }
+            */
+            
+            
+            // reverse str
+            /*
+            string str = "reverse";
+            string result ="";
+            foreach (char i in str) {
+                result = i+result ;
+            }
+            Console.WriteLine(result);
+            */
+            
+            // min max
+            /*
+            int[] arr = {1,2,34,5,64,65};
+            int min = arr[0] ;
+            int max = arr[0] ;
+            foreach (int i in arr) {
+                if(i > max) max = i ;
+                if(i < min) min = i ;
+            }
+            Console.WriteLine("Min "+min);
+            Console.WriteLine("Max "+max);
+            
+            */
+            
+            // avg
+            /*
+            int tot = 0 ,size = 0;
+            for(int i = 1 ; i < 101 ; i++) {
+                tot+=100;
+                size++;
+            }
+            Console.WriteLine((int)tot/size);
+            */
+            
+            
+            // palindrome or not
+            /*
+            string str = "reverse";
+            string result ="";
+            foreach (char i in str) {
+                result = i+result ;
+            }
+            if(str == result)
+            Console.WriteLine("palin");
+            else 
+            Console.WriteLine("not palin");
+            */
+            
+            // fibonacci using recurssion
+            
+            // Console.WriteLine(rec(15));
+            
+            // binary search 
+            
+            /*
+            int target = 99 ;
+            int[] arr = {1,2,7,8,9,10,11,12,46};
+            int left = 0 ;
+            int right = 8 ;
+            int flag = 1 ;
+            while(left <= right) {
+                int mid = (right+left) / 2 ;
+                if(arr[mid] == target) {
+                    Console.WriteLine("found");
+                    flag = 0;
+                    break;
+                }
+                else if(arr[mid] > target) {
+                    right = mid - 1;
+                }
+                else
+                    left = mid + 1;
+            }
+            
+            if(flag == 1)  Console.WriteLine("not found");
+            
+            */
+            
+            Console.ReadLine();
+            
+    }
+}
