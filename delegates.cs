@@ -5,9 +5,9 @@ public class HelloWorld
     public static void Main(string[] args)
     {   
         IsEven iseven = new IsEven(method);
-        
-        Main1.even(10,iseven);
-        
+
+        Main1.even(10, iseven);
+
     }
     public static bool method(int n) 
     {
